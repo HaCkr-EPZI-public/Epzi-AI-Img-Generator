@@ -49,7 +49,7 @@ The **Epzi AI Image Generator** offers an interactive platform where users can c
     ```
 4. Open the app in your browser:
     ```bash
-    http://localhost:5173/
+    http://localhost:port/
     ```
 
 ---
