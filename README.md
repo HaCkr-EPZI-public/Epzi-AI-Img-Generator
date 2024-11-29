@@ -23,12 +23,36 @@ The **Epzi AI Image Generator** is a sophisticated web application that harnesse
 - **Backend (Planned):** FastAPI (Python) for seamless API handling.
 - **AI Integration:** Hugging Face, Stable Diffusion API, or other powerful AI models to bring your creative visions to life.
 - **Utilities:** Vite for rapid development, along with custom hooks and utility modules for efficient prompt building and downloads.
+- **Electron**: For packaging the app as a cross-platform desktop application.
 
 ---
 
 ## 💡 **Project Vision**
 
 The **Epzi AI Image Generator** offers an interactive platform where users can craft high-quality, customizable AI-generated images. Whether for personal wallpapers, digital artwork, or design inspiration, this app allows users to bring their ideas to life with detailed descriptions, artistic styles, and various image settings.
+
+---
+
+## New Feature: Electron Integration
+
+The app now includes an Electron setup for cross-platform packaging. This allows you to run the app as a desktop application on **Windows**, **macOS**, and **Linux**.
+
+### Changes Made:
+
+- **Fixed Electron Setup**: The Electron main file is now using CommonJS (`.cjs` extension) for compatibility.
+- **Dependencies & Configuration**: Corrected package dependencies and build configurations for Electron.
+- **Electron Build**: Generate platform-specific installers:
+  - **Windows**: `.exe` installer
+  - **macOS**: `.dmg` file
+  - **Linux**: AppImage
+
+### Running Electron:
+
+1. **To start the Electron development environment**:
+
+   ```bash
+   npm run electron:dev
+   ```
 
 ---
 
